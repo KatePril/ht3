@@ -22,7 +22,7 @@ def get_day_schedule():
         return list(schedule[day])
     except KeyError:
         print ("Саня, дивись на календар")
-        get_day_schedule()
+        return get_day_schedule()
 
 def get_books(day_schedule):
     collected_books = []
