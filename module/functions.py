@@ -5,6 +5,7 @@ def collect_the_bag():
     print(string_books(books))
     collected_books = []
     day_schedule = get_day_schedule()
+    # варіант з одиницею не обробляла, бо, нажаль, шкіл з одним уроком в день не існує(
     if len(day_schedule) < 5:
         print(f"Санько, в тебе {len(day_schedule)} спроби")
     else:
