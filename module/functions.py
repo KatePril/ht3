@@ -5,6 +5,10 @@ def collect_the_bag():
     print(string_books(books))
     collected_books = []
     day_schedule = get_day_schedule()
+    if len(day_schedule) < 5:
+        print(f"Санько, в тебе {len(day_schedule)} спроби")
+    else:
+        print(f"Санько, в тебе {len(day_schedule)} спроб")
     print_line()
     for _ in range(len(day_schedule)):
         book_name = input("Введи назву підручника:").capitalize()
